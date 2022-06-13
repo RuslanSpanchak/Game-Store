@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game Store</title>
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -13,27 +13,45 @@
 <body>
 
 	<div class="wrap">
-		
-		<header class="header" id="header">
+
+		<header class="header">
 			
-			<a href="#" class="logo">PORTFOLIO</a>
+			<div class="logo">ZAGAMORTER</div>
 
-			<div class="menu_block">
-
-				<nav class="nav">
-					
-					<a href="#" id="home" class="nav_item">Home</a>
-					<a href="#works" id="work" class="nav_item">Work</a>
-					<a href="#about_scroll" id="about" class="nav_item">About</a>
-					<a href="#skills" id="skills_scroll" class="nav_item">Skills</a>
-
-				</nav>
-
-				<a class="menu_btn" id="menu_btn">
+			<div class="work_info_container">
 				
-					<span class="menu_btn_span"></span>
+				<div class="work_time">10:00 - 21:00</div>
+				<div class="work_time work_time_day">БЕЗ ВИХІДНИХ</div>
 
-				</a>
+			</div>
+
+			<div class="work_info_container">
+				
+				<div class="work_time">0 679 51 81 86</div>
+				<div class="work_time work_time_day">ДЗВОНИ БЕЗКОШТОВНО</div>
+
+			</div>
+
+			<div class="user_info_container">
+				
+				<img src="./img/shopping-basket.png" width="50px" height="50px" class="icon_header icon_basket" id="btn_basket">
+				<img src="./img/user (2).png" width="50px" height="50px" class="icon_header" id="btn_user">
+				<img src="./img/gamer.png" width="50px" height="50px" class="icon_header" id="btn_user_account">
+
+				<div class="dark_mode">
+					
+					<div class="dark_light_mode" id="dark_light_mode">
+						
+						<div class="dark_light_mode_circle" id="dark_light_mode_circle">
+							
+							<img src="./img/solid-black-sun-symbol.png" width="20px" height="20px" id="light_mode_img">
+							<img src="./img/brightness.png" width="20px" height="20px" id="dark_mode_img">
+
+						</div>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -41,224 +59,234 @@
 
 		<section class="section">
 			
-			<img src="./img/stars.png" alt="" id="stars" class="section_img">
-			<img src="./img/moon.png" alt="" id="moon" class="section_img moon">
-			<img src="./img/mountains_behind.png" alt="" id="mountains_behind" class="section_img">
-			<div class="text" id="text">WELLCOME</div>
-			<a href="#works" class="btn" id="btn">EXPLORE</a>
-			<img src="./img/mountains_front.png" alt="" id="mountains_front" class="section_img mountains_front">
-
-		</section>
-
-		<section class="works" id="works">
-			
-			<div class="title">Latest Works</div>
-
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863243.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">01</div>
-				<div class="works_item_title">JS-Paint</div>
-				<div class="works_item_descriptions">HTML, CSS, JS, Canvas</div>
-				<a href="https://ruslanspanchak.github.io/JS-Paint/" class="works_btn">Review</a>
-				<a href="https://github.com/RuslanSpanchak/JS-Paint/blob/main/index.html" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863244.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">02</div>
-				<div class="works_item_title">Rooble</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="https://ruslanspanchak.github.io/Rooble/" class="works_btn">Review</a>
-				<a href="https://github.com/RuslanSpanchak/Rooble/blob/main/index.html" class="works_btn code_btn">Code</a>
-
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863245.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">03</div>
-				<div class="works_item_title">Dashboard</div>
-				<div class="works_item_descriptions">HTML, CSS, JS, Chart.JS</div>
-				<a href="https://ruslanspanchak.github.io/Dashboard/" class="works_btn">Review</a>
-				<a href="https://github.com/RuslanSpanchak/Dashboard/blob/main/index.html" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863253.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">04</div>
-				<div class="works_item_title">Game Store</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="https://ruslanspanchak.github.io/Game-Store/" class="works_btn">Review</a>
-				<a href="https://github.com/RuslanSpanchak/Game-Store/blob/main/index.html" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863254.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">05</div>
-				<div class="works_item_title">Catch The Insect</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863255.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">06</div>
-				<div class="works_item_title">Weather</div>
-				<div class="works_item_descriptions">HTML, CSS, JS, API</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863256.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">07</div>
-				<div class="works_item_title">Street Racer</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863258.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">08</div>
-				<div class="works_item_title">Direct</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863259.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">09</div>
-				<div class="works_item_title">Code Editor</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863260.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">10</div>
-				<div class="works_item_title">Radio</div>
-				<div class="works_item_descriptions">HTML, CSS, JS, API</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863264.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">11</div>
-				<div class="works_item_title">Pizza Restaurant</div>
-				<div class="works_item_descriptions">HTML, CSS, JS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-			<div class="works_item">
-					
-				<img src="./img/photo5269217062037863265.jpg" width="1000px" height="500px" alt="" class="works_img">
-
-				<div class="background_color"></div>
-				<div class="works_number">12</div>
-				<div class="works_item_title">Figma Template</div>
-				<div class="works_item_descriptions">HTML, CSS</div>
-				<a href="#" class="works_btn">Review</a>
-				<a href="" class="works_btn code_btn">Code</a>
-
-			</div>
-
-		</section>
-
-		<section class="works" id="about_scroll">
-			
-			<div class="title">About Me</div>
-
-			<div class="about_descriptions_place">
-
-				<p class="about_descriptions">Hi, I am <span style="color: aqua;">Ruslan</span>, Front End Developer.<br><br>Rrofessionally connected with the <span style="color: aqua;">front end development</span> industry and <span style="color: aqua;">informations technology.</span><br><br>Well - organised person, problem solver, independed employee with high attention to detail. Fan of <span style="color: aqua;">Socker,</span> outdoor activities and <span style="color: aqua;">Films.</span> My favorite socker team is <span style="color: red;">Manchester United</span> and my favorite film is <span style="color: red;">Batman.</span> From <span style="color: aqua;">Ukraine.</span> I study at <span style="color: darkorange;">/Creator IT Academy.</span><br><br>Interesed in the entire <span style="color: aqua;">frontend spectrum.</span><br><br>See you later, <span style="color: aqua;">Good Luck!</span></p>
-
-			</div>
-
-		</section>
-
-		<section class="works" id="skills">
-
-			<div class="title">My Skills</div>
-			
-			<div class="skills_block">
+			<div class="container">
 				
-				<div class="skills_block_title">Main Skills</div>
+				<div class="section_title">КРАЩЕ ЗА ЖАНРАМИ ДЛЯ <span class="section_title_span">ВСІХ КОНСОЛЕЙ</span></div>
 
-				<div class="skills_block_item">
+				<div class="categorie_choose">
+				
+						<div class="categorie_choose_item categorie_choose_item_active" id="top_sales">ТОП ПРОДАЖІВ (<span id="categorie_choose_span_top_sales"></span>)</div>
+						<div class="categorie_choose_item" id="adventures">ПРИГОДИ (<span id="categorie_choose_span_adventures"></span>)</div>
+						<div class="categorie_choose_item" id="shooter">ШУТЕР (<span id="categorie_choose_span_shooter"></span>)</div>
+						<div class="categorie_choose_item" id="action">ЕКШИН (<span id="categorie_choose_span_action"></span>)</div>
+
+				</div>
+
+				<div class="card_row" id="card_top_sales">
 					
-					<div class="skills_block_item_container">
+					<div class="card" id="mortal_combat_XL_PS">
+						
+						<img src="./img/site_list_eh2mkm1o4_651729aa.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Mortal Kombat XL Sony PlayStation 4 Б/У</div>
 
-						<div class="skills_name">HTML</div>
-						<div class="skills_name">Java Script</div>
-						<div class="skills_name">Animations</div>
+						<div class="price_console">
+
+							<div class="price">549 ₴</div>
+							<div class="top_sales_card">ТОП ПРОДАЖІВ</div>
+							<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
 
 					</div>
+					<div class="card" id="gta_V_PS">
+						
+						<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Grand Theft Auto V Sony PlayStation 4</div>
 
-					<div class="skills_block_item_container">
+						<div class="price_console">
 
-						<div class="skills_name">CSS</div>
-						<div class="skills_name">jQuery</div>
-						<div class="skills_name">Transformations</div>
+						<div class="price">749 ₴</div>
+						<div class="top_sales_card">ТОП ПРОДАЖІВ</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="mortal_combat_11_XBOX">
+						
+						<img src="./img/site_list_eh1sjnigl_58f83f09.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Mortal Kombat 11 XBOX One Б/У</div>
+
+						<div class="price_console">
+
+						<div class="price">749 ₴</div>
+						<div class="top_sales_card">ТОП ПРОДАЖІВ</div>
+						<img src="./img/xbox.png" width="65px" height="65px"class="xbox_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="mortal_combat_X_PS">
+						
+						<img src="./img/site_list_1eg8fppas_bebd4386.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Mortal Kombat X Sony PlayStation 4 Б/У</div>
+
+						<div class="price_console">
+
+						<div class="price">499 ₴</div>
+						<div class="top_sales_card">ТОП ПРОДАЖІВ</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
 
 					</div>
 
 				</div>
 
-				<div class="skills_block_title">Minor Skills</div>
-
-				<div class="skills_block_item">
-
-					<div class="skills_block_item_container">
+				<div class="card_row" id="card_adventures">
 					
-						<div class="skills_name">Time Management</div>
-						<div class="skills_name">Communications</div>
-						<div class="skills_name">Critical Thinking</div>
+					<div class="card" id="days_gone_PS">
+						
+						<img src="./img/site_list_eh5tbf3nl_296ae3b9.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Days Gone Sony PlayStation 4</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">599 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="death_stranding_PS">
+						
+						<img src="./img/site_list_eh5tqdi66_b129b439.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Death Stranding Sony PlayStation 4 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">999 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="detroit_PS">
+						
+						<img src="./img/site_list_erhb7vqdj_59f1b5c3.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Detroit Become Human PlayStation 4</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">999 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="ratched_PS">
+						
+						<img src="./img/site_list_eh7fbud59_7c979ba5.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Ratched & Clank Sony PlayStation 4 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">299 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
 
 					</div>
 
-					<div class="skills_block_item_container">
+				</div>
 
-						<div class="skills_name">Rroblem Solving</div>
-						<div class="skills_name">Decision Making</div>
-						<div class="skills_name">Creative Thinking</div>
+				<div class="card_row" id="card_shooter">
+					
+					<div class="card" id="gta_V_XBOX">
+						
+						<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Grand Theft Auto V XBOX One Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">649 ₴</div>
+						<img src="./img/xbox.png" width="65px" height="65px"class="xbox_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="gta_IV_PS">
+						
+						<img src="./img/site_list_ehh79lgtr_ae5a7a17.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Grand Theft Auto IV Sony PlayStation 4 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">229 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="battlefield_XBOX">
+						
+						<img src="./img/site_list_ehh7mcpjg_48714776.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Battlefield 4 XBOX 360 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">179 ₴</div>
+						<img src="./img/xbox.png" width="65px" height="65px" class="xbox_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="gta_SA_PS">
+						
+						<img src="./img/site_list_eilavp1b1_3114f3a3.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра GTA San Andreas PlayStation 3 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">699 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="card_row" id="card_action">
+					
+					<div class="card" id="god_of_war_PS">
+						
+						<img src="./img/site_list_eh7j0fp0j_806f5752.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра God Of War PlayStation 4 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">449 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="horizen_zero_dawn_PS">
+						
+						<img src="./img/site_list_eh8a2kchu_4a7e9d9a.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Horizen Zero Dawn Sony PlayStation 4 Б/У</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">149 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="RDR_2_PS">
+						
+						<img src="./img/site_list_ehan07o7m_626c733d.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра Red Dead Redemption 2 PlayStation 4</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">999 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
+
+					</div>
+					<div class="card" id="the_last_of_us_PS">
+						
+						<img src="./img/site_list_ehbep0k5p_57bcf9e5.webp" width="300px" height="375px" class="card_img">
+						<div class="card_text">Гра The Last Of Us 2 PlayStation 4</div>
+
+						<div class="price_console price_console_next">
+						<div class="price price_next">999 ₴</div>
+						<img src="./img/playstation.png" width="50px" height="50px" class="playstation_img_card">
+
+						</div>
 
 					</div>
 
@@ -268,24 +296,312 @@
 
 		</section>
 
-		<footer class="footer" id="footer">
+		<section class="section section_banner">
 			
-			<img src="./img/portfolio.png" width="75px" height="75px" alt="" class="footer_img">
-
-			<div class="footer_links">
+			<div class="container container_center">
 				
-				<a href="https://github.com/RuslanSpanchak" class="footer_links_item">Github</a>
-				<a href="https://www.instagram.com/accounts/login/?next=/ruslan_spanchak/" class="footer_links_item">Instagram</a>
-				<a href="https://mail.google.com/mail/u/0/#inbox" class="footer_links_item">Gmail</a>
-				<a href="https://web.telegram.org/k/" class="footer_links_item">Telegram</a>
+				<img src="./img/site_epmhhia3f_ef16e71e.webp" width="1450px" height="650px" class="icon_banner">
 
 			</div>
 
-			<div class="footer_description">2022 Spanchack Ruslan</div>
+		</section>
+
+		<footer class="footer">
+
+			<div class="container">
+			
+			<div class="footer_row">
+				
+				<div class="footer_info_item">
+					
+					<div class="work_time work_time_day work_time_footer_special_top">Call-center</div>
+					<div class="work_time work_time_footer_special">0 679 51 81 86</div>
+
+					<div class="work_time work_time_day work_time_footer_special_top">Графік роботи</div>
+					<div class="work_time work_time_footer_special">10:00 - 21:00</div>
+
+					<div class="work_time work_time_day work_time_footer_special_top">Соціальні мережі</div>
+					<div class="social_networks">
+						
+						<img src="./img/instagram.png" width="50px" height="50px" class="icon_social_networks">
+						<img src="./img/tik-tok.png" width="50px" height="50px" class="icon_social_networks icon_tiktok">
+						<img src="./img/facebook.png" width="50px" height="50px" class="icon_social_networks">
+
+					</div>
+
+				</div>
+
+				<div class="footer_info_item">
+					
+					<div class="work_time work_time_day work_time_footer_special_top">Інформація</div>
+					<div class="work_time work_time_footer_special footer_info_cursor">Про магазин</div>
+					<div class="work_time work_time_footer footer_info_cursor">Вакансії</div>
+					<div class="work_time work_time_footer footer_info_cursor">Оплата та доставка</div>
+					<div class="work_time work_time_footer footer_info_cursor">Гарантія та повернення</div>
+					<div class="work_time work_time_footer footer_info_cursor">Контакти</div>
+
+				</div>
+
+				<div class="footer_info_item">
+					
+					<div class="work_time work_time_day work_time_footer_special_top">Адреса</div>
+					<div class="work_time work_time_footer_special">Самбір, вул. Площа-ринок, 12</div>
+
+				</div>
+
+			</div>
+
+			<div class="footer_last_place">
+
+				<div class="footer_text">© 2022 Zagamorter. All rights reserved</div>
+
+			</div>
+
+			</div>
 
 		</footer>
 
-	<script src="main.js"></script>
-	
+		<div class="login">
+			
+			<div class="login_header">
+
+				<div class="login_title">ВХІД</div>
+				<img src="./img/close.png" width="30px" height="30px" class="icon_close_login" id="icon_close_login">
+
+			</div>
+
+			<input type="text" class="input" id="input_login" name="" placeholder="Логін">
+
+			<div class="password_rules">Пароль повинен бути: більше 8 символів, повинен містити великі та маленькі літери та повинен містити у собі числа</div>
+
+			<div class="input_password_container">
+
+				<input type="password" class="input input_password" id="input_password" name="" placeholder="Пароль">
+				<img src="./img/hidden.png" width="40px" height="40px" class="icon_eye" id="close_eye">
+				<img src="./img/view.png" width="40px" height="40px" class="icon_eye" id="open_eye">
+
+			</div>
+
+			<div class="btn_enter" id="btn_enter">УВІЙТИ</div>
+
+		</div>
+
+		<div class="rate_me">
+			
+			<div class="rate_me_text">На скільки тобі сподобався сайт ?</div>
+
+			<img class="emotion" id="emotion_sad" src="./img/sad.png" width="150px" height="150px">
+			<img class="emotion" id="emotion_normal" src="./img/neutral.png" width="150px" height="150px"> 
+			<img class="emotion" id="emotion_good" src="./img/smile.png" width="150px" height="150px">
+			<img class="emotion" id="emotion_happy" src="./img/happy.png" width="150px" height="150px">
+			<img class="emotion" id="emotion_smilling" src="./img/smiling.png" width="150px" height="150px">
+
+			<div class="stars">
+				
+				<img class="stars_item" src="./img/star.png" width="100px" height="100px" id="star_one">
+				<img class="stars_item" src="./img/star (1).png" width="100px" height="100px" id="star_one_yellow">
+				<img class="stars_item" src="./img/star.png" width="100px" height="100px" id="star_two">
+				<img class="stars_item" src="./img/star (1).png" width="100px" height="100px" id="star_two_yellow">
+				<img class="stars_item" src="./img/star.png" width="100px" height="100px" id="star_three">
+				<img class="stars_item" src="./img/star (1).png" width="100px" height="100px" id="star_three_yellow">
+				<img class="stars_item" src="./img/star.png" width="100px" height="100px" id="star_four">
+				<img class="stars_item" src="./img/star (1).png" width="100px" height="100px" id="star_four_yellow">
+				<img class="stars_item" src="./img/star.png" width="100px" height="100px" id="star_five">
+				<img class="stars_item" src="./img/star (1).png" width="100px" height="100px" id="star_five_yellow">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="buy_page">
+
+		<div class="btn_buy btn_close" id="btn_close">ВИЙТИ</div>
+		<div class="btn_buy btn_go_basket btn_go_basket_buy_page" id="btn_to_basket">ДО КОРЗИНИ</div>
+
+			<div class="buy_page_container">
+
+				<img src="./img/site_list_eh2mkm1o4_651729aa.webp" width="500px" height="575px" class="card_img game_img" id="mortal_combat_XL_img">
+				<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="500px" height="575px" class="card_img game_img" id="gta_V_img">
+				<img src="./img/site_list_eh1sjnigl_58f83f09.webp" width="500px" height="575px" class="card_img game_img" id="mortal_combat_11_img">
+				<img src="./img/site_list_1eg8fppas_bebd4386.webp" width="500px" height="575px" class="card_img game_img" id="mortal_combat_X_img">
+				<img src="./img/site_list_eh5tbf3nl_296ae3b9.webp" width="500px" height="575px" class="card_img game_img" id="days_gone_img">
+				<img src="./img/site_list_eh5tqdi66_b129b439.webp" width="500px" height="575px" class="card_img game_img" id="death_stranding_img">
+				<img src="./img/site_list_erhb7vqdj_59f1b5c3.webp" width="500px" height="575px" class="card_img game_img" id="detroit_img">
+				<img src="./img/site_list_eh7fbud59_7c979ba5.webp" width="500px" height="575px" class="card_img game_img" id="ratched_img">
+				<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="500px" height="575px" class="card_img game_img" id="gta_V_xbox_img">
+				<img src="./img/site_list_ehh79lgtr_ae5a7a17.webp" width="500px" height="575px" class="card_img game_img" id="gta_IV_img">
+				<img src="./img/site_list_ehh7mcpjg_48714776.webp" width="500px" height="575px" class="card_img game_img" id="battlefield_img">
+				<img src="./img/site_list_eilavp1b1_3114f3a3.webp" width="500px" height="575px" class="card_img game_img" id="gta_SA_img">
+				<img src="./img/site_list_eh7j0fp0j_806f5752.webp" width="500px" height="575px" class="card_img game_img" id="god_of_war_img">
+				<img src="./img/site_list_eh8a2kchu_4a7e9d9a.webp" width="500px" height="575px" class="card_img game_img" id="horizen_zero_dawn_img">
+				<img src="./img/site_list_ehan07o7m_626c733d.webp" width="500px" height="575px" class="card_img game_img" id="RDR_2_img">
+				<img src="./img/site_list_ehbep0k5p_57bcf9e5.webp" width="500px" height="575px" class="card_img game_img" id="the_last_of_us_img">
+
+				<div class="game_info">
+					
+					<div class="game_name margin_text"></div>
+
+					<div class="game_info_title margin_title">Платформа</div>
+					<img src="./img/playstation.png" width="50px" height="50px" class="game_info_text margin_text" id="playstation_img">
+					<img src="./img/xbox.png" width="50px" height="50px" class="game_info_text margin_text" id="xbox_img">
+
+					<div class="game_info_title margin_title">Стан</div>
+					<div class="game_info_text margin_text" id="game_state"></div>
+
+					<div class="game_info_title margin_title">Ціна</div>
+					<div class="game_info_text margin_text game_info_text_bold" id="game_price"></div>
+
+					<div class="btn_place">
+					
+						<div class="btn_buy" id="btn_buy">КУПИТИ</div>
+						<div class="btn_buy btn_description" id="btn_description">ПОЧИТАТИ ОПИС</div>
+						<!-- <img src="./img/like (1).png" width="50px" height="50px" class="icon_cursor" id="dis_like">
+						<img src="./img/like.png" width="50px" height="50px" class="icon_cursor" id="like"> -->
+
+					</div>
+
+					<div class="delivery_container">
+						
+						<img src="./img/package.png" width="50px" height="50px" class="icon_delivery">
+						<div class="delivery_text">Відправимо Поштою сьогодні після 16:00 Самовивіз у містах Самбір</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="description" id="description">
+				
+				<div class="description_container">
+
+					<div class="description_title">ОПИС</div>
+
+					<div class="image_close_place">
+
+						<img src="./img/close.png" width="40px" height="40px" class="icon_close" id="icon_close">
+
+					</div>
+
+				</div>
+
+				<p class="description_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+
+			</div>			
+
+	</div>
+
+	<div class="user_account">
+
+		<div class="site_information">
+			
+			<div class="description_container">
+
+					<div class="description_title">ПРО МЕНЕ</div>
+
+				</div>
+
+				<p class="description_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
+
+		</div>
+			
+		<div class="user_account_place">
+
+			<img src="./img/close.png" width="40px" height="40px" class="icon_close_account" id="icon_close_account">
+
+			<div class="btn_buy btn_close_account">
+
+				<img src="./img/export.png" width="35px" height="35px">
+				<div class="btn_close_account_text" id="exit_account">ВИЙТИ</div>
+
+			</div>
+
+			<div class="btn_buy btn_go_basket" id="to_basket">ДО КОРЗИНИ</div>
+				
+			<div class="user_account_info_title">ФОТО</div>
+			<img src="./img/gamer.png" class="user_img" width="150px" height="150px">
+
+			<div class="user_account_info_title">ОСОБИСТІ ДАНІ</div>
+			<div class="user_information">
+
+				<div class="user_information_text">Логін: </div>
+				<div class="user_account_info_title user_info" id="user_login"></div>
+
+				<div class="user_info_password_container">
+					
+					<div class="user_information_text margin_password_top">Пароль: </div>
+
+				</div>
+
+				<div class="user_account_info_title user_info" id="user_password"></div>
+
+			</div>
+
+			<div class="user_account_info_title">СТАТЬ</div>
+			<div class="sex_container">
+				
+				<div class="input_radio" id="user_man">
+					
+					<div class="input_radio_circle" id="user_man_circle"></div>
+
+				</div>
+				<div class="user_sex">Геймер</div>
+				<div class="input_radio" id="user_woman">
+					
+					<div class="input_radio_circle" id="user_woman_circle"></div>
+
+				</div>
+				<div class="user_sex">Геймерша</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="basket">
+
+		<div class="basket_header">
+				
+			<img src="./img/shopping-basket.png" width="50px" height="50px" class="icon_header icon_basket icon_basket_page" id="btn_basket">
+			<div class="basket_header_title">ОБРАНІ ІГРИ <span class="basket_header_title_span" id="number_purchases"></span></div>
+
+			<div class="user_info_container user_info_container_basket">
+
+				<div class="btn_buy clear_basket" id="clear_basket">ОЧИСТИТИ КОРЗИНУ</div>
+				<div class="ammount" id="ammount"></div>
+				<img src="./img/close.png" width="40px" height="40px" class="icon_close" id="icon_close_basket">
+
+			</div>
+					
+		</div>
+		
+		<div class="basket_container">
+			
+			<img src="./img/site_list_eh2mkm1o4_651729aa.webp" width="300px" height="375px" class="card_img game_img card_basket" id="mortal_combat_XL_img_account">
+				<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="300px" height="375px" class="card_img game_img card_basket" id="gta_V_img_account">
+				<img src="./img/site_list_eh1sjnigl_58f83f09.webp" width="300px" height="375px" class="card_img game_img card_basket" id="mortal_combat_11_img_account">
+				<img src="./img/site_list_1eg8fppas_bebd4386.webp" width="300px" height="375px" class="card_img game_img card_basket" id="mortal_combat_X_img_account">
+				<img src="./img/site_list_eh5tbf3nl_296ae3b9.webp" width="300px" height="375px" class="card_img game_img card_basket" id="days_gone_img_account">
+				<img src="./img/site_list_eh5tqdi66_b129b439.webp" width="300px" height="375px" class="card_img game_img card_basket" id="death_stranding_img_account">
+				<img src="./img/site_list_erhb7vqdj_59f1b5c3.webp" width="300px" height="375px" class="card_img game_img card_basket" id="detroit_img_account">
+				<img src="./img/site_list_eh7fbud59_7c979ba5.webp" width="300px" height="375px" class="card_img game_img card_basket" id="ratched_img_account">
+				<img src="./img/site_list_eh13auiq3_071e19b8.webp" width="300px" height="375px" class="card_img game_img card_basket" id="gta_V_xbox_img_account">
+				<img src="./img/site_list_ehh79lgtr_ae5a7a17.webp" width="300px" height="375px" class="card_img game_img card_basket" id="gta_IV_img_account">
+				<img src="./img/site_list_ehh7mcpjg_48714776.webp" width="300px" height="375px" class="card_img game_img card_basket" id="battlefield_img_account">
+				<img src="./img/site_list_eilavp1b1_3114f3a3.webp" width="300px" height="375px" class="card_img game_img card_basket" id="gta_SA_img_account">
+				<img src="./img/site_list_eh7j0fp0j_806f5752.webp" width="300px" height="375px" class="card_img game_img card_basket" id="god_of_war_img_account">
+				<img src="./img/site_list_eh8a2kchu_4a7e9d9a.webp" width="300px" height="375px" class="card_img game_img card_basket" id="horizen_zero_dawn_img_account">
+				<img src="./img/site_list_ehan07o7m_626c733d.webp" width="300px" height="375px" class="card_img game_img card_basket" id="RDR_2_img_account">
+				<img src="./img/site_list_ehbep0k5p_57bcf9e5.webp" width="300px" height="375px" class="card_img game_img card_basket" id="the_last_of_us_img_account">
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
